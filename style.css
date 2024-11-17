@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url(abstract-uv-ultraviolet-light-composition.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .poster {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .poster-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(216, 197, 19);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    animation: slideIn 2s ease-out;
+  }
+  
+  .poster-header .event-date {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-out 0.5s;
+  }
+  
+  .poster-content .tagline {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    animation: bounceIn 1.5s ease-out;
+  }
+  
+  .btn {
+    background-color: #43c9e4;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: zoomIn 1s ease-out;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e05d54;
+    transform: scale(1.1);
+  }
+  
+  .poster-footer p {
+    font-size: 1rem;
+    margin: 15px 0;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-out 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .poster {
+      padding: 20px;
+    }
+  
+    .poster-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .poster-content .tagline {
+      font-size: 1.8rem;
+    }
+  
+    .cta-btn {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+  
+    .poster-footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .poster {
+      padding: 15px;
+    }
+  
+    .poster-header h1 {
+      font-size: 2rem;
+    }
+  
+    .poster-content .tagline {
+      font-size: 1.5rem;
+    }
+  
+    .cta-btn {
+      font-size: 0.9rem;
+      padding: 8px 20px;
+    }
+  
+    .poster-footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
